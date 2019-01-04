@@ -220,18 +220,27 @@ h1, h2, h3, h4, h5 {
 }
 
 .main-content,
+.banner-bg-cam,
+.banner-bg-app,
+.banner-bg-mtrx,
 .banner-bg {
   float: right;
   width: 77%;
 }
 @media screen and (max-width: 1290px) {
   .main-content,
+  .banner-bg-cam,
+  .banner-bg-app,
+  .banner-bg-mtrx,
   .banner-bg {
     width: 70%;
   }
 }
 @media screen and (max-width: 992px) {
   .main-content,
+  .banner-bg-cam,
+  .banner-bg-app,
+  .banner-bg-mtrx,
   .banner-bg {
     width: 100%;
   }
@@ -428,6 +437,36 @@ h3.profile-title {
   padding: 260px 80px;
   position: relative;
   background: url("../img/7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+
+.banner-bg-cam {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/camera_slider/tetons.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+
+.banner-bg-app {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/chinese_app/chinese_app_zoomed.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+
+.banner-bg-mtrx {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/matrix_multi/triangles_large.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -49,8 +49,6 @@
                         <li><a href="index.html#top"><i class="fa fa-home"></i>Home</a></li>
                         <li><a href="index.html#about"><i class="fa fa-user"></i>About Me</a></li>
                         <li><a href="index.html#projects"><i class="fa fa-newspaper-o"></i>Projects</a></li>
-                        <li><a href="index.html#resume"><i class="fa fa-briefcase"></i>Resume</a></li>
-                        <li><a href="index.html#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
                     </ul>
                 </div>
             </div>
@@ -70,8 +68,6 @@
                     <li><a href="index.html#top"><i class="fa fa-globe"></i>Home</a></li>
                     <li><a href="index.html#about"><i class="fa fa-pencil"></i>About Me</a></li>
                     <li><a href="index.html#projects"><i class="fa fa-paperclip"></i>Projects</a></li>
-                    <li><a href="index.html#resume"><i class="fa fa-briefcase"></i>Resume</a></li>
-                    <li><a href="index.html#contact"><i class="fa fa-link"></i>Contact Me</a></li>
                 </ul>
             </div> <!-- .main-navigation -->
             <div class="top-section">
@@ -80,3 +76,50 @@
               <p><a href="https://www.linkedin.com/in/scott-madeux/" target="_blank"><i class="fa fa-linkedin fa-lg"></i> &nbsp;&nbsp;LinkedIn</a></p>
             </div>
         </div> <!-- .sidebar-menu -->
+
+        <div class="banner-bg-mtrx" id="top">
+            <div class="banner-overlay"></div>
+            <div class="welcome-text">
+                <h2>FPGA Matrix Multiplier</h2>
+                <h5>This project was to demonstrate how an FPGA can be used to multiply matricies much faster than a normal processor</h5>
+            </div>
+        </div>
+        
+        <div class="main-content" style="padding: 100px 120px">
+            <style>
+              td, th {
+                border: solid 1px white;
+                vertical-align: middle;
+              } 
+          </style>
+            <table>
+                <tr>
+                    <td>
+                    <p>For this project I wanted to use three 3-dimentional vectors, which represent the three corners of a triangle in 3D space. I wanted to be able to transform these vectors on the Basys3 using matrix multiplication and speed things up a lot by doing those operations in parallel. The transformations I chose to apply to these vectors were scaling, translation in the X direction, translation in the Y direction, and translation in the Z direction. With more time, more transformations could have been added such as rotation, shearing, and reflection. <br><br>
+                      Here is an idea of how these transformations are done:</p>
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                    <center>
+                    <img src="img/matrix_multi/multiplication.png" width="80%">
+                    <br>
+                    <p>S is the number that the vectors will be scaled by.</p>
+                    <br>
+                    <p>X, Y, and Z are the amount the vectors will be translated in each direction.</p>
+                    <br>
+                    <p>[A D G]<sup>T</sup>, [B E H]<sup>T</sup>, and [C F I]<sup>T</sup> are the three vectors to be transformed.</p>
+                    <br>
+                    </center>
+                    <p>The matrix on the right hand side of the equals sign is the translated matrix that results after the multiplication is preformed</p>
+                    <br>
+                    <p>As you can see this transformation takes a total of 9 multiplications and if we were to add more kinds of transformations it would take 27+ multiplications. This program will be able to all of these multiplications in parallel. This means the same principle would be applied much larger matrices and the time to do the calculations would be the same.</p>
+                    <br>
+                    <p>If you'd like to see the full project documentation click <a href="https://github.com/smadeux/projects/blob/master/matrix_multiplier/ECEN%20340%20-%20Final%20Project%20-%20Finished.pdf" target="_blank">here</a>.</p>
+                    <br>
+                    <p>Also click <a href="https://github.com/smadeux/projects/tree/master/matrix_multiplier/code" target="_blank">here</a> for all of the code used in the this project.</p>
+                  </td>
+                </tr>
+            </table>
+        </div>
+    

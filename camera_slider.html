@@ -49,8 +49,6 @@
                         <li><a href="index.html#top"><i class="fa fa-home"></i>Home</a></li>
                         <li><a href="index.html#about"><i class="fa fa-user"></i>About Me</a></li>
                         <li><a href="index.html#projects"><i class="fa fa-newspaper-o"></i>Projects</a></li>
-                        <li><a href="index.html#resume"><i class="fa fa-briefcase"></i>Resume</a></li>
-                        <li><a href="index.html#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
                     </ul>
                 </div>
             </div>
@@ -70,8 +68,6 @@
                     <li><a href="index.html#top"><i class="fa fa-globe"></i>Home</a></li>
                     <li><a href="index.html#about"><i class="fa fa-pencil"></i>About Me</a></li>
                     <li><a href="index.html#projects"><i class="fa fa-paperclip"></i>Projects</a></li>
-                    <li><a href="index.html#resume"><i class="fa fa-briefcase"></i>Resume</a></li>
-                    <li><a href="index.html#contact"><i class="fa fa-link"></i>Contact Me</a></li>
                 </ul>
             </div> <!-- .main-navigation -->
             <div class="top-section">
@@ -81,27 +77,75 @@
             </div>
         </div> <!-- .sidebar-menu -->
 
-        <div class="main-content" style="padding: 100px 100px">
+        <div class="banner-bg-cam" id="top">
+            <div class="banner-overlay"></div>
+            <div class="welcome-text">
+                <h2>Motorized Camera Slider</h2>
+                <h5>I built this camera slider as the main project for an embedded systems class.</h5>
+            </div>
+        </div>
+        
+        <div class="main-content" style="padding: 100px 120px">
             <style>
               td, th {
                 border: solid 1px white;
                 vertical-align: middle;
               } 
           </style>
-          <center>
-            <h1>Motorized Camera Slider</h1>
-          </center>
             <table>
                 <tr>
                     <td>
                       <center>
-                      <img src="img/camera_slider/camera_slider_large.jpg" width="90%">
+                      <img src="img/camera_slider/camera_slider_large.jpg" width="90%" alt="Camera mounted to slider">
                       </center>
                     </td>
                     <td>
                     <p>This project involved making a camera slider with motors added to it to slowly move a camera as it takes a time lapse. Everything is controlled by a Raspberry Pi including the movement of the motors as well as when the camera takes a picture. There is already software built for Linux that will interface with most cameras using shell commands. The challenges of this project were building the motorized slider, creating the software that would control the motors and the camera, and coming up with a way to interface with the Raspberry Pi even in remote locations away from power sources and internet. A motorized camera slider makes for an overall better, more dynamic time lapse; especially when it comes to things like astrophotography.</p>
                     </td>
                 </tr>
+                <tr>
+                  <td>
+                    <div style="padding: 0px 80px">
+                    <h1>Hardware</h1>
+                    <ul style="list-style-type:disc">
+                      <li>Raspberry Pi 3 B+</li>
+                      <li>BIQU A4988 Stepper Motor Driver</li>
+                      <li>Nema 17 Stepper Motor</li>
+                      <li>1.5 Meter V-Slot Linear Rail</li>
+                      <li>6mm Wide Timing Belt</li>
+                      <li>BIQU Gantry Plate</li>
+                      <li>Andoer Tripod Head</li>
+                      <li>Various 3D Printed Parts</li>
+                    </ul>
+                    </div>
+                  </td>
+                  <td>
+                    <center>
+                    <img src="img/camera_slider/DSC05508.jpg" width="90%" alt="Raspberry Pi connected to A4988 driver">
+                    </center>
+                  </td>
+                </tr>
+            </table>
+            <table>
+              <tr>
+                <td>
+                  <br>
+                  <p>When the python script that controls the slider is run, the user is asked a series of questions to learn the settings for that particular time lapse. The software then checks if the camera is on/connected and also gets the camera’s shutter speed. Some calculations are then made and the time lapse is run according to the user’s specifications.
+                  Possible future additions include a printed circuit board to eliminate most of the wires, a second stepper motor that would allow the camera to rotate, and an app with the ability to control the slider’s settings.</p>
+                  <br>
+                  <p>Here is a link to the current version of the code used for the slider: <a href="https://github.com/smadeux/projects/blob/master/camera_slider/slider.py" target="_blank">silder.py</a></p>
+                  <br>
+                  <p>Click <a href="https://github.com/smadeux/projects/blob/master/camera_slider/Camera%20Slider%20Write-Up%20-%20Finished.pdf" target="_blank">here</a> for the full project write-up.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <br>
+                  <center>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wuSsToc3es8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </center>
+                </td>
+              </tr>
             </table>
         </div>
     
