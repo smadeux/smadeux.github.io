@@ -223,6 +223,7 @@ h1, h2, h3, h4, h5 {
 .banner-bg-cam,
 .banner-bg-app,
 .banner-bg-mtrx,
+.banner-bg-light,
 .banner-bg {
   float: right;
   width: 77%;
@@ -232,6 +233,7 @@ h1, h2, h3, h4, h5 {
   .banner-bg-cam,
   .banner-bg-app,
   .banner-bg-mtrx,
+  .banner-bg-light,
   .banner-bg {
     width: 70%;
   }
@@ -241,6 +243,7 @@ h1, h2, h3, h4, h5 {
   .banner-bg-cam,
   .banner-bg-app,
   .banner-bg-mtrx,
+  .banner-bg-light,
   .banner-bg {
     width: 100%;
   }
@@ -467,6 +470,18 @@ h3.profile-title {
   padding: 260px 80px;
   position: relative;
   background: url("../img/matrix_multi/triangles_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+
+.banner-bg-light {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/christmas_lights/lights_white.jpg");
+  /*Photo by Dzenina Lukac from Pexels*/
+  /*https://www.pexels.com/photo/yellow-string-lights-754262/*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

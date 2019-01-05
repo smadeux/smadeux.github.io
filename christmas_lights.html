@@ -31,7 +31,7 @@
                     <div class="col-md-12">
                         <div class="top-section">
                             <div class="profile-image">
-                                <img src="img/ski_square.jpg" alt="Scott Madeux">
+                                <img src="img/profile.jpg" alt="Scott Madeux">
                             </div>
                             <div class="profile-content">
                                 <h3 class="profile-title">Scott Madeux</h3>
@@ -58,7 +58,7 @@
         <div class="sidebar-menu hidden-xs hidden-sm">
             <div class="top-section">
                 <div class="profile-image">
-                    <img src="img/ski_square.jpg" alt="Scott Madeux">
+                    <img src="img/profile.jpg" alt="Scott Madeux">
                 </div>
                 <h3 class="profile-title">Scott Madeux</h3>
                 <p class="profile-description">Computer Engineering Senior at BYU-Idaho</p>
@@ -77,11 +77,11 @@
             </div>
         </div> <!-- .sidebar-menu -->
 
-        <div class="banner-bg-cam" id="top">
+        <div class="banner-bg-light" id="top">
             <div class="banner-overlay"></div>
             <div class="welcome-text">
-                <h2>Motorized Camera Slider</h2>
-                <h5>I built this camera slider as the main project for an embedded systems class.</h5>
+                <h2>Christmas Light Controller</h2>
+                <h5>This is a system I built to contol up to four strings of christmas lights</h5>
             </div>
         </div>
         
@@ -93,55 +93,27 @@
               } 
           </style>
             <table>
-                <tr>
-                    <td>
-                      <center>
-                      <img src="img/camera_slider/camera_slider_large.jpg" width="90%" alt="Camera mounted to slider">
-                      </center>
-                    </td>
-                    <td>
-                    <p>This project involved making a camera slider with motors added to it to slowly move a camera as it takes a time lapse. Everything is controlled by a Raspberry Pi including the movement of the motors as well as when the camera takes a picture. There is already software built for Linux that will interface with most cameras using shell commands. The challenges of this project were building the motorized slider, creating the software that would control the motors and the camera, and coming up with a way to interface with the Raspberry Pi even in remote locations away from power sources and internet. A motorized camera slider makes for an overall better, more dynamic time lapse; especially when it comes to things like astrophotography.</p>
-                    </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div style="padding: 0px 80px">
-                    <h1>Hardware</h1>
-                    <ul style="list-style-type:disc">
-                      <li>Raspberry Pi 3 B+</li>
-                      <li>BIQU A4988 Stepper Motor Driver</li>
-                      <li>Nema 17 Stepper Motor</li>
-                      <li>1.5 Meter V-Slot Linear Rail</li>
-                      <li>6mm Wide Timing Belt</li>
-                      <li>BIQU Gantry Plate</li>
-                      <li>Andoer Tripod Head</li>
-                      <li>Various 3D Printed Parts</li>
-                    </ul>
-                    </div>
-                  </td>
-                  <td>
-                    <center>
-                    <img src="img/camera_slider/DSC05508.jpg" width="90%" alt="Raspberry Pi connected to A4988 driver">
-                    </center>
-                  </td>
-                </tr>
+              <tr>
+                <td style="width: 40%">
+                  <p>The brains of this controller is a Raspberry Pi that sends signals to its GPIO pins based on which strings of lights shoud be on and which should be off. The GPIO pins are connected by jumper wires to a 4-channel relay module and each channel of the relay is connected to an extension cord. Each string of christmas lights just needs to be plugged into the corresponding extention cord and you're good to go.</p>
+                  <br>
+                  <p>This project started when I took an analog circuits class. I decided build the basis version of this where four strings of lights could be turned on and off by a python script. After the class was over, I decided to add the ability for the lights to blink in coordination with music.</p>
+                </td>
+                <td style="width: 60%">
+                  <center>
+                    <img src="img/christmas_lights/schematic.png" width="100%">
+                  </center>
+                </td>
+              </tr>
             </table>
             <table>
               <tr>
                 <td>
+                  <p>The digram above shows how the GPIO pins were connected to the relay module to control the lights as well as one pin for power(5V) and another for ground.<p>
                   <br>
-                  <p>When the python script that controls the slider is run, the user is asked a series of questions to learn the settings for that particular time lapse. The software then checks if the camera is on/connected and also gets the camera’s shutter speed. Some calculations are then made and the time lapse is run according to the user’s specifications.
-                  Possible future additions include a printed circuit board to eliminate most of the wires, a second stepper motor that would allow the camera to rotate, and an app with the ability to control the slider’s settings.</p>
+                  <p>Here is a link to the current version of the code used to sequence the lights with music: <a href="https://github.com/smadeux/projects/blob/master/christmas_lights/CSV_Parsing.py" target="_blank">CSV_Parsing.py</a></p>
                   <br>
-                  <p>Here is a link to the current version of the code used for the slider: <a href="https://github.com/smadeux/Camera-Slider/blob/master/slider.py" target="_blank">silder.py</a></p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <br>
-                  <center>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wuSsToc3es8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </center>
+                  <p>Click <a href="https://github.com/smadeux/projects/blob/master/christmas_lights/" target="_blank">here</a> to see all of the files used for this project</p>
                 </td>
               </tr>
             </table>
