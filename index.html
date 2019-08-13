@@ -50,7 +50,9 @@
                     <ul class="navigation">
                         <li><a href="#top"><i class="fa fa-home"></i>Home</a></li>
                         <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
-                        <li><a href="#projects"><i class="fa fa-newspaper-o"></i>Projects</a></li>
+                        <li><a href="#projects"><i class="fa fa-paperclip"></i>Projects</a></li>
+                        <li><a href="#education"><i class="fa fa-graduation-cap"></i>Education/Skills</a></li>
+                        <li><a href="#work"><i class="fa fa-briefcase"></i>Work Expirience</a></li>
 <!--                        <li><a href="#resume"><i class="fa fa-briefcase"></i>Resume</a></li>-->
 <!--                        <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>-->
                     </ul>
@@ -72,6 +74,8 @@
                     <li><a href="#top"><i class="fa fa-globe"></i>Home</a></li>
                     <li><a href="#about"><i class="fa fa-pencil"></i>About Me</a></li>
                     <li><a href="#projects"><i class="fa fa-paperclip"></i>Projects</a></li>
+                    <li><a href="#education"><i class="fa fa-graduation-cap"></i>Education/Skills</a></li>
+                    <li><a href="#work"><i class="fa fa-briefcase"></i>Work Expirience</a></li>
 <!--                    <li><a href="#resume"><i class="fa fa-briefcase"></i>Resume</a></li>-->
 <!--                    <li><a href="#contact"><i class="fa fa-link"></i>Contact Me</a></li>-->
                 </ul>
@@ -114,7 +118,77 @@
                           photographers at a horse ranch in Jackson, WY</p>
                           <br>
                           
+                          <!-- PROJECTS -->
+<!--                    <div class="page-section" id="projects" style="padding: 60px">-->
+                        <div class="row" id="projects">
+                            <div class="col-md-12">
+                                <h4 class="widget-title" style="margin-bottom: 10px;">PROJECTS</h4>
+                              <hr style="margin-top: 5px;">
+                                <p>These are some of the school and personal projects that I've worked on. Mouseover each image to see details and click to see more and get links to the code and final reports.</p>
+                            </div>
+                        </div>
+                        <div class="row projects-holder">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="project-item">
+                                    <img src="img/reg_file.jpg" alt="8-bit Register File Design">
+                                    <div class="project-hover">
+                                        <div class="inside">
+                                            <h5><a href="reg_file.html">8-bit Register File Design</a></h5>
+                                            <p>The CMOS Layout for an 8-bit Register File that I created for a VLSI Design class</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="project-item">
+                                    <img src="img/camera_slider.jpg" alt="Motorized Camera Slider">
+                                    <div class="project-hover">
+                                        <div class="inside">
+                                            <h5><a href="camera_slider.html">Motorized Camera Slider</a></h5>
+                                            <p>This is a camera slider I created for an embedded systems course project</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="project-item">
+                                    <img src="img/chinese_app_small.jpg" alt="Chinese Learning App">
+                                    <div class="project-hover">
+                                        <div class="inside">
+                                            <h5><a href="chinese_app.html">Chinese Learning App</a></h5>
+                                            <p>An award-winning app created for the BYU-Idaho Chinese Department</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="project-item">
+                                    <img src="img/triangles.jpg" alt="FPGA Matrix Multiplier">
+                                    <!--This image was originally posted to Flickr by geishaboy500 at https://www.flickr.com/photos/49503154413@N01/7335137584. It was reviewed on 30 May 2015 by FlickreviewR and was confirmed to be licensed under the terms of the cc-by-2.0.
+                                    The image has been cropped and resized-->
+                                    <div class="project-hover">
+                                        <div class="inside">
+                                            <h5><a href="matrix_multi.html">FPGA Matrix Multiplier</a></h5>
+                                            <p>This project was to demonstrate how an FPGA can be used to multiply matrices much faster than a normal processor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                  <div class="project-item">
+                                      <img src="img/christmas_lights/lights_small.jpg" alt="Christmas Light Controller">
+                                      <div class="project-hover">
+                                          <div class="inside">
+                                              <h5><a href="christmas_lights.html">Christmas Light Controller</a></h5>
+                                              <p>This is a system I built to control up to four strings of christmas lights</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div> <!-- .projects-holder -->
+                          <br>
                           <!--Education-->
+                          <div id="education">
                           <h4 class="widget-title" style="margin-bottom: 10px;">Education</h4>
                           <hr style="margin-top: 5px;">
                           <style>
@@ -148,6 +222,7 @@
                                                                                 Operating Systems, Embedded Systems, Discrete Math, Web Design</li>
                             <li><b style="color: #5f6d7e">Hardware Courses:</b> Advanced Digital Systems, VLSI Design, Electronic Devices and Circuits, Computer Architecture, Microprocessor-based Systems</li>
                           </ul>
+                          </div>
                           <br>
                           
                           <!--Skills-->
@@ -211,10 +286,9 @@
                                 </div>
                             </div>
                           </div>
-                          </div>
                           
                           <!--Work Experience-->
-                          <h4 class="widget-title" style="margin-bottom: 10px;">Work Experience</h4>
+                          <h4 class="widget-title" style="margin-bottom: 10px;" id="work">Work Experience</h4>
                           <hr style="margin-top: 5px;">
                           <table style="width: 100%">
                             <tr style="color: #5f6d7e">
@@ -293,73 +367,7 @@
                     </div> <!-- #about -->
                     </div>
                     
-                    <!-- PROJECTS -->
-                    <div class="page-section" id="projects" style="padding: 60px">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="widget-title">PROJECTS</h4>
-                            <p>These are some of the school and personal projects that I've worked on. Mouseover each image to see details and click to see more and get links to the code used.</p>
-                        </div>
-                    </div>
-                    <div class="row projects-holder">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/reg_file.jpg" alt="8-bit Register File Design">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="reg_file.html">8-bit Register File Design</a></h5>
-                                        <p>Comming Soon!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/camera_slider.jpg" alt="Motorized Camera Slider">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="camera_slider.html">Motorized Camera Slider</a></h5>
-                                        <p>This is a camera slider I created for an embedded systems course project</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/chinese_app_small.jpg" alt="Chinese Learning App">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="chinese_app.html">Chinese Learning App</a></h5>
-                                        <p>An award-winning app created for the BYU-Idaho Chinese Department</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/triangles.jpg" alt="FPGA Matrix Multiplier">
-                                <!--This image was originally posted to Flickr by geishaboy500 at https://www.flickr.com/photos/49503154413@N01/7335137584. It was reviewed on 30 May 2015 by FlickreviewR and was confirmed to be licensed under the terms of the cc-by-2.0.
-                                The image has been cropped and resized-->
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="matrix_multi.html">FPGA Matrix Multiplier</a></h5>
-                                        <p>This project was to demonstrate how an FPGA can be used to multiply matrices much faster than a normal processor</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                              <div class="project-item">
-                                  <img src="img/christmas_lights/lights_small.jpg" alt="Christmas Light Controller">
-                                  <div class="project-hover">
-                                      <div class="inside">
-                                          <h5><a href="christmas_lights.html">Christmas Light Controller</a></h5>
-                                          <p>This is a system I built to control up to four strings of christmas lights</p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                    </div> <!-- .projects-holder -->
+                    
                     </div>
                     <hr>
 
