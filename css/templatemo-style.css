@@ -225,6 +225,7 @@ h1, h2, h3, h4, h5 {
 .banner-bg-app,
 .banner-bg-mtrx,
 .banner-bg-light,
+.banner-bg-white,
 .banner-bg {
   float: right;
   width: 77%;
@@ -236,6 +237,7 @@ h1, h2, h3, h4, h5 {
   .banner-bg-app,
   .banner-bg-mtrx,
   .banner-bg-light,
+  .banner-bg-white,
   .banner-bg {
     width: 70%;
   }
@@ -247,6 +249,7 @@ h1, h2, h3, h4, h5 {
   .banner-bg-app,
   .banner-bg-mtrx,
   .banner-bg-light,
+  .banner-bg-white,
   .banner-bg {
     width: 100%;
   }
@@ -443,6 +446,16 @@ h3.profile-title {
   padding: 260px 80px;
   position: relative;
   background: url("../img/yukon.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+
+.banner-bg-white {
+  padding: 260px 80px;
+  position: relative;
+  background: url("../img/loom.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
